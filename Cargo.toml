@@ -1,0 +1,14 @@
+[package]
+name = "set-gps-time"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.86"
+chrono = "0.4.38"
+clap = { version = "4.5.8", features = ["derive", "wrap_help"] }
+libc = "0.2.155"
+nix = { version = "0.29.0", features = ["time"] }
+serial2 = "0.2.26"
